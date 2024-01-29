@@ -3,7 +3,7 @@
 1. Clone o repositório:
 
    ```bash
-       git https://github.com/MatheusDelduque/data_engineer_workshop.git   
+       git clone https://github.com/MatheusDelduque/data_engineer_workshop.git   
        cd data_engineer_workshop
     ```
 2. Configure a versão correta do Python com `pyenv`:
