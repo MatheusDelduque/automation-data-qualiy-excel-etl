@@ -4,7 +4,7 @@
 
    ```bash
        git https://github.com/MatheusDelduque/data_engineer_workshop.git   
-       d data_engineer_workshop
+       cd data_engineer_workshop
     ```
 2. Configure a versão correta do Python com `pyenv`:
 
