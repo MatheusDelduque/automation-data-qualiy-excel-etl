@@ -7,7 +7,7 @@ from pydantic import ValidationError
 def test_valid_data():
     valid_data = {
         'email': 'qNt9h@example.com',
-        'date': datetime.now(),
+        'date': datetime.now().date(),
         'value': 100.0,
         'amount': 10,
         'product': 'Banana',
@@ -26,7 +26,7 @@ def test_valid_data():
 def test_invalid_data():
     invalid_data = {
         'email': 'qNt9h@example.com',
-        'date': datetime.now(),
+        'date': datetime.now().date(),
         'value': -100.0,
         'amount': -10,
         'product': 'Banana',
@@ -39,7 +39,7 @@ def test_invalid_data():
 def test_category_validation():
     invalid_data = {
         'email': 'qNt9h@example.com',
-        'date': datetime.now(),
+        'date': datetime.now().date(),
         'value': 100.0,
         'amount': 10,
         'product': 'Banana',
