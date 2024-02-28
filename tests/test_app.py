@@ -62,3 +62,13 @@ def test_check_user_can_enter_excel(driver):
 
     assert "O schema do arquivo Excel foi validado com sucesso!" in driver.page_source
     driver.close()
+
+def test_failed_upload(driver):
+    driver.get('http://localhost:8501')
+    sleep(5)
+
+    failure_file_path = os.path.abspath("data/failure.xlsx")
+    driver.find_element(By.CSS_SELECTOR, "input[type='file']").send_keys(failure_file_path)
+    sleep(5)
+
+    assert "O schema do arquivo Excel foi validado com erro" in driver.page_source
