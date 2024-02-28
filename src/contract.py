@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr, PositiveFloat, PositiveInt, field_validator
-from datetime import datetime
+from datetime import date
 from enum import Enum
 
 class CategoryEnum(str, Enum):
@@ -21,9 +21,9 @@ class Sales(BaseModel):
     '''
 
     email: EmailStr
-    date: datetime
+    date: date
     value: PositiveFloat
-    amount: PositiveFloat
+    amount: PositiveInt
     product: str
     category: CategoryEnum
 
